@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:padding="24dp"
+    tools:context=".ui.indonesia.IndonesiaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/data_covid_19_di_indonesia"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/rectangle_bg_blue"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/map_indo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:contentDescription="@string/map_indonesia"
+            android:scaleType="centerCrop"
+            android:src="@drawable/map_indo" />
+
+        <TextView
+            android:id="@+id/tv_positif_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:textColor="?android:attr/colorActivatedHighlight"
+            android:textSize="24sp"
+            tools:text="@string/num_count" />
+
+        <TextView
+            android:id="@+id/positif_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_positif_id"
+            android:layout_marginBottom="8dp"
+            android:text="@string/positif"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_recover_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/positif_id"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="24sp"
+            tools:text="@string/num_count" />
+
+        <TextView
+            android:id="@+id/recover_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_recover_id"
+            android:layout_marginBottom="8dp"
+            android:text="@string/sembuh"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_dead_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recover_id"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="24sp"
+            tools:text="@string/num_count" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dead_id"
+            android:layout_marginBottom="8dp"
+            android:text="@string/meninggal"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_pandemi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rectangle_bg_blue"
+        android:padding="8dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        tools:text="@string/daftar_rumah_sakit" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_hospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="26dp"
+            tools:listitem="@layout/row_hospital" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Covid</string>
+    <string name="title_home">Home</string>
+    <string name="title_indonesia">Indonesia</string>
+    <string name="title_question">Q&amp;A</string>
+    <string name="stay_safe">Stay\nSafe!</string>
+    <string name="global_data">Global Data</string>
+    <string name="meninggal">Meninggal</string>
+    <string name="num_count">17,000,452</string>
+    <string name="positif">Positif</string>
+    <string name="sembuh">Sembuh</string>
+    <string name="contagion">Contagion</string>
+    <string name="contaminated_object">Contaminated\nObject</string>
+    <string name="human_contact">Human\nContact</string>
+    <string name="animal_contact">Animal\nContact</string>
+    <string name="map">map</string>
+    <string name="symptoms">Symptoms</string>
+    <string name="wear_a_face_mask">Wear A\nFace Mask</string>
+    <string name="hand_washing">Hand\nWashing</string>
+    <string name="use_nose_pag">Use\nNose Pag</string>
+    <string name="go_to_the_doctor">Go To\nThe Doctor</string>
+    <string name="take_care">Take Care</string>
+    <string name="question">1. Question?</string>
+    <string name="answer">Answer</string>
+    <string name="tanya_jawab_covid_19">Tanya Jawab\nCovid-19</string>
+    <string name="data_covid_19_di_indonesia">Status Data Covid-19\nDi Indonesia</string>
+    <string name="map_indonesia">Map Indonesia</string>
+    <string name="daftar_rumah_sakit">Pandemi virus corona masih berlanjut di Indonesia dengan kasus yang terus meningkat. Sebagian pasien berhasil sembuh dan kembali bersama keluarga.
+Penanganan pasien COVID-19 dilakukan di rumah sakit yang telah ditunjuk pemerintah. Berdasarkan Keputusan Menteri Kesehatan nomor HK.01.07/MENKES/169/2020 ada 132 rumah sakit rujukan COVID-19.</string>
+    <string name="rumah_sakit">Rumah Sakit</string>
+</resources>

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ly_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:elevation="10dp">
+
+            <TextView
+                android:id="@+id/tv_title_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/global_data"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view_bg"
+                android:layout_width="match_parent"
+                android:layout_height="179dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rectangle_bg_blue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title_home" />
+
+            <ImageView
+                android:id="@+id/maps_global"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:contentDescription="@string/map"
+                android:scaleType="fitCenter"
+                tools:src="@drawable/maps"
+                app:layout_constraintBottom_toBottomOf="@+id/view_bg"
+                app:layout_constraintEnd_toEndOf="@+id/view_bg"
+                app:layout_constraintTop_toTopOf="@+id/view_bg" />
+
+            <TextView
+                android:id="@+id/tv_positif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="textStart"
+                android:textColor="?android:attr/colorActivatedHighlight"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view_bg"
+                app:layout_constraintEnd_toEndOf="@+id/view_bg"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/view_bg"
+                app:layout_constraintTop_toTopOf="@+id/view_bg"
+                app:layout_constraintVertical_bias="0.0"
+                tools:text="@string/num_count" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/positif"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_positif"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_positif"
+                app:layout_constraintTop_toBottomOf="@+id/tv_positif" />
+
+            <TextView
+                android:id="@+id/tv_recover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                tools:text="@string/num_count" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sembuh"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_recover"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_recover"
+                app:layout_constraintTop_toBottomOf="@+id/tv_recover" />
+
+            <TextView
+                android:id="@+id/tv_dead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                tools:text="@string/num_count" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/meninggal"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_dead"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_dead"
+                app:layout_constraintTop_toBottomOf="@+id/tv_dead" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:text="@string/stay_safe"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/tv_title_home"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/rectangle_bg2"
+            android:elevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ly_1">
+
+
+            <View
+                android:id="@+id/view_bg3"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/rectangle_bg_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/img_symptoms"
+                android:layout_width="match_parent"
+                android:layout_height="179dp"
+                android:contentDescription="@string/symptoms"
+                app:layout_constraintBottom_toBottomOf="@+id/view_bg3"
+                app:layout_constraintEnd_toEndOf="@+id/view_bg3"
+                app:layout_constraintStart_toStartOf="@+id/view_bg3"
+                app:layout_constraintTop_toTopOf="@+id/view_bg3" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/rectangle_bg_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_bg3" />
+
+            <TextView
+                android:id="@+id/contagion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="@string/contagion"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/view"
+                app:layout_constraintStart_toStartOf="@+id/view"
+                app:layout_constraintTop_toTopOf="@+id/view" />
+
+            <ImageView
+                android:id="@+id/img_bottle"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="@string/contaminated_object"
+                tools:src="@drawable/ic_water"
+                app:layout_constraintEnd_toStartOf="@+id/img_humancontact"
+                app:layout_constraintStart_toStartOf="@+id/view"
+                app:layout_constraintTop_toBottomOf="@+id/contagion" />
+
+            <ImageView
+                android:id="@+id/img_humancontact"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/human_contact"
+                tools:src="@drawable/ic_shake"
+                app:layout_constraintEnd_toEndOf="@+id/contagion"
+                app:layout_constraintStart_toStartOf="@+id/contagion"
+                app:layout_constraintTop_toBottomOf="@+id/contagion" />
+
+            <ImageView
+                android:id="@+id/img_animal"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:contentDescription="@string/animal_contact"
+                tools:src="@drawable/ic_animal"
+                app:layout_constraintEnd_toEndOf="@+id/view"
+                app:layout_constraintStart_toEndOf="@+id/img_humancontact"
+                app:layout_constraintTop_toBottomOf="@+id/contagion" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contaminated_object"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/img_bottle"
+                app:layout_constraintStart_toStartOf="@+id/img_bottle"
+                app:layout_constraintTop_toBottomOf="@+id/img_bottle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/human_contact"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/img_humancontact"
+                app:layout_constraintStart_toStartOf="@+id/img_humancontact"
+                app:layout_constraintTop_toBottomOf="@+id/img_humancontact" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/animal_contact"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/img_animal"
+                app:layout_constraintStart_toStartOf="@+id/img_animal"
+                app:layout_constraintTop_toBottomOf="@+id/img_animal" />
+
+            <View
+                android:id="@+id/view_bg5"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="80dp"
+                android:background="@drawable/rectangle_bg_blue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="@string/take_care"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/view_bg5"
+                app:layout_constraintStart_toStartOf="@+id/view_bg5"
+                app:layout_constraintTop_toTopOf="@+id/view_bg5" />
+
+            <ImageView
+                android:id="@+id/img_mask"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/wear_a_face_mask"
+                tools:src="@drawable/ic_mask"
+                app:layout_constraintEnd_toEndOf="@+id/textView3"
+                app:layout_constraintHorizontal_bias="0.65"
+                app:layout_constraintStart_toStartOf="@+id/view_bg5"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <ImageView
+                android:id="@+id/img_washhand"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/hand_washing"
+                tools:src="@drawable/ic_wash"
+                app:layout_constraintEnd_toEndOf="@+id/view_bg5"
+                app:layout_constraintHorizontal_bias="0.35"
+                app:layout_constraintStart_toStartOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <ImageView
+                android:id="@+id/img_tissue"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/use_nose_pag"
+                tools:src="@drawable/ic_tissue"
+                app:layout_constraintEnd_toEndOf="@+id/img_mask"
+                app:layout_constraintStart_toStartOf="@+id/img_mask"
+                app:layout_constraintTop_toBottomOf="@+id/img_mask" />
+
+            <ImageView
+                android:id="@+id/img_doctor"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/go_to_the_doctor"
+                tools:src="@drawable/ic_doctor"
+                app:layout_constraintEnd_toEndOf="@+id/img_washhand"
+                app:layout_constraintStart_toStartOf="@+id/img_washhand"
+                app:layout_constraintTop_toBottomOf="@+id/img_washhand" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@string/wear_a_face_mask"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/img_mask"
+                app:layout_constraintEnd_toStartOf="@+id/img_mask"
+                app:layout_constraintTop_toTopOf="@+id/img_mask" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/hand_washing"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/img_washhand"
+                app:layout_constraintStart_toEndOf="@+id/img_washhand"
+                app:layout_constraintTop_toTopOf="@+id/img_washhand" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@string/use_nose_pag"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/img_tissue"
+                app:layout_constraintEnd_toStartOf="@+id/img_tissue"
+                app:layout_constraintTop_toTopOf="@+id/img_tissue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/go_to_the_doctor"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/img_doctor"
+                app:layout_constraintStart_toEndOf="@+id/img_doctor"
+                app:layout_constraintTop_toTopOf="@+id/img_doctor" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>
